@@ -101,8 +101,20 @@ export default function PortfolioApp() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-100 text-slate-900">
-      <header className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-10 shadow-lg">
+    <div className="min-h-screen bg-black text-white overflow-hidden relative">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl animate-bounce"></div>
+      </div>
+
+      <div className="relative z-10">en rela<header className="bg-white/5 backdrop-blur-xl border-b border-white/10 text-white p-10 shadow-2xl">ute top-0 left-0 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-pink-500/10 rounded-full blur-3xl animate-bounce"></div>
+      </div>
+
+      <div className="relative z-10">
+      <header className="bg-white/5 backdrop-blur-xl border-b border-white/10 text-white p-10 shadow-2xl">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-5xl font-bold mb-4">Samiksha Bhosale</h1>
@@ -115,8 +127,7 @@ export default function PortfolioApp() {
               <button className="bg-white text-indigo-700 px-6 py-3 rounded-2xl font-semibold shadow-md hover:scale-105 transition-all duration-300">
                 Download Resume
               </button>
-              <button className="bg-black text-white px-6 py-3 rounded-2xl font-semibold shadow-md hover:scale-105 transition-all duration-300">
-                Contact Me
+              <button className="bg-black text-white px-6 py-3 rounded-2xl font-semibold shadow-md hover:scale-105 transitionbg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8  Contact Me
               </button>
             </div>
           </div>
@@ -130,7 +141,7 @@ export default function PortfolioApp() {
       </header>
 
       <main className="max-w-7xl mx-auto p-6 md:p-10 space-y-16">
-        <section className="bg-white rounded-3xl shadow-lg p-8">
+        <section className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8">
           <h2 className="text-4xl font-bold mb-6 text-indigo-700">About Me</h2>
           <p className="text-lg leading-relaxed mb-4">
             I am a motivated First Year B.Tech student at MIT Academy of
@@ -139,24 +150,22 @@ export default function PortfolioApp() {
             solutions.
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            I enjoy learning new technologies and applying them in practical
+            Ibg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8nd applying them in practical
             projects. My goal is to become a skilled engineer capable of solving
             real world problems using modern technology.
           </p>
           <p className="text-lg leading-relaxed">
-            Apart from academics, I actively explore coding platforms,
-            collaborative projects, and creative web design.
+            Apart from academics, I activelybg-white/10 text-white          collaborative projects, and creative web design.
           </p>
         </section>
 
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="bg-white rounded-3xl shadow-lg p-8">
-            <h2 className="text-4xl font-bold mb-6 text-purple-700">Skills</h2>
+          <div className="bg-white/5 backdrop-blur-xl border border-white/10 roubg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8    <h2 className="text-4xl font-bold mb-6 text-purple-700">Skills</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {skills.map((skill, index) => (
                 <div
                   key={index}
-                  className="bg-indigo-100 text-indigo-800 px-4 py-4 rounded-2xl text-center font-semibold hover:scale-105 transition-all duration-300"
+                  className="bg-white/10 text-white px-4 py-4 rounded-2xbg-white/5 border border-white/10ter font-semibold hover:scale-105 transition-all duration-300"
                 >
                   {skill}
                 </div>
@@ -164,57 +173,52 @@ export default function PortfolioApp() {
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl shadow-lg p-8">
-            <h2 className="text-4xl font-bold mb-6 text-pink-700">
+          <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8">
+  bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8font-bold mb-6 text-pink-700">
               Achievements
             </h2>
             <div className="space-y-4">
               {achievements.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-4 bg-pink-50 p-4 rounded-2xl"
+                  className="flex items-start gap-4 bg-white/5 border bordbg-white/5 border border-green-400/20 p-4 rounded-2xl"
                 >
                   <div className="w-4 h-4 rounded-full bg-pink-600 mt-2"></div>
                   <p className="text-lg">{item}</p>
                 </div>
               ))}
-            </div>
-          </div>
+          text-gray-300      </div>
         </section>
 
-        <section className="bg-white rounded-3xl shadow-lg p-8">
-          <h2 className="text-4xl font-bold mb-8 text-green-700">
-            Education
-          </h2>
+        <section className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8">
+          <h2 className="text-4xl font-bold mb-8 text-green-7bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8   </h2>
           <div className="space-y-8">
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="border-l-8 border-green-500 bg-green-50 p-6 rounded-2xl"
+                className="border-l-8 border-green-500 bg-white/5 border border-green-400/20 p-6 rounded-2xl"
               >
-                <h3 className="text-2xl font-bold">{edu.institute}</h3>
+                <h3 bg-white/5 border border-blue-400/20"text-2xl font-bold">{edu.institute}</h3>
                 <p className="text-lg font-semibold mt-2">{edu.course}</p>
-                <p className="text-sm text-gray-600 mt-1">{edu.year}</p>
+                <p className="text-sm text-gray-300 mt-1">{edu.year}</p>
                 <p className="text-lg mt-4 leading-relaxed">{edu.details}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="bg-white rounded-3xl shadow-lg p-8">
+        <section className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8">
           <h2 className="text-4xl font-bold mb-8 text-blue-700">Projects</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-blue-50 rounded-3xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white/5 border border-blue-400/20 rounded-3xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="h-40 rounded-2xl bg-gradient-to-r from-blue-400 to-indigo-500 mb-6 flex items-center justify-center text-white text-3xl font-bold">
                   {project.title.charAt(0)}
-                </div>
-
-                <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                </div>bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8ext-2xl font-bold mb-4">{project.title}</h3>
 
                 <p className="text-lg leading-relaxed mb-6">
                   {project.description}
@@ -222,7 +226,7 @@ export default function PortfolioApp() {
 
                 <div className="flex flex-wrap gap-3">
                   {project.tech.map((tech, techIndex) => (
-                    <span
+          bg-white/5 border border-orange-400/20pan
                       key={techIndex}
                       className="bg-white px-4 py-2 rounded-full text-sm font-semibold shadow"
                     >
@@ -232,20 +236,19 @@ export default function PortfolioApp() {
                 </div>
               </div>
             ))}
-          </div>
-        </section>
+ bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8
 
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="bg-white rounded-3xl shadow-lg p-8">
+          <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8">
             <h2 className="text-4xl font-bold mb-6 text-orange-700">
-              Certifications
+              Cerbg-white/5 border border-red-400/20ns
             </h2>
 
             <div className="space-y-6">
               {certifications.map((cert, index) => (
                 <div
                   key={index}
-                  className="bg-orange-50 p-6 rounded-2xl border border-orange-200"
+                  className="bg-white/5 border border-orange-400/20 p-6 rounded-2xl border border-orange-200"
                 >
                   <h3 className="text-2xl font-bold">{cert.name}</h3>
                   <p className="text-lg mt-2">{cert.issuer}</p>
@@ -254,14 +257,14 @@ export default function PortfolioApp() {
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl shadow-lg p-8">
+          <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8">
             <h2 className="text-4xl font-bold mb-6 text-red-700">Hobbies</h2>
 
             <div className="grid grid-cols-2 gap-4">
               {hobbies.map((hobby, index) => (
                 <div
                   key={index}
-                  className="bg-red-50 p-5 rounded-2xl text-center font-semibold hover:scale-105 transition-all duration-300"
+                  className="bg-white/5 border border-red-400/20 p-5 rounded-2xl text-center font-semibold hover:scale-105 transition-all duration-300"
                 >
                   {hobby}
                 </div>
@@ -291,16 +294,14 @@ export default function PortfolioApp() {
               </div>
             </div>
 
-            <form className="space-y-5">
-              <input
-                type="text"
+            <form className="space-y-bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8       type="text"
                 placeholder="Your Name"
                 className="w-full p-4 rounded-2xl bg-white/10 border border-white/20 outline-none"
               />
 
               <input
                 type="email"
-                placeholder="Your Email"
+     bg-white/5 border border-indigo-400/20laceholder="Your Email"
                 className="w-full p-4 rounded-2xl bg-white/10 border border-white/20 outline-none"
               />
 
@@ -308,7 +309,7 @@ export default function PortfolioApp() {
                 rows="5"
                 placeholder="Your Message"
                 className="w-full p-4 rounded-2xl bg-white/10 border border-white/20 outline-none"
-              ></textarea>
+      bg-white/5 border border-purple-400/20extarea>
 
               <button className="bg-white text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all duration-300">
                 Send Message
@@ -317,45 +318,44 @@ export default function PortfolioApp() {
           </div>
         </section>
 
-        <section className="bg-white rounded-3xl shadow-lg p-8">
+        <section className="bg-white/5 backdrop-blur-xl border border-white/10 rbg-white/5 border border-white/10 shadow-2xl p-8">
           <h2 className="text-4xl font-bold mb-8 text-indigo-700">
             Daily Learning Journey
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-indigo-50 rounded-2xl p-6">
-              <h3 className="text-2xl font-bold mb-4">Programming</h3>
+            <div className="bg-white/5 border border-indigo-400/20 rounded-2xl p-6">
+              <h3 className="texbg-white/5 border border-green-400/20bold mb-4">Programming</h3>
               <p className="text-lg leading-relaxed">
                 Practicing coding fundamentals and building logical thinking
                 through Python and C programming.
               </p>
             </div>
 
-            <div className="bg-purple-50 rounded-2xl p-6">
-              <h3 className="text-2xl font-bold mb-4">Web Development</h3>
+            <div className="bg-white/5 border border-purple-400/20 rounded-2xl p-6">
+   bg-white/5 border border-yellow-400/20h3 className="text-2xl font-bold mb-4">Web Development</h3>
               <p className="text-lg leading-relaxed">
                 Exploring HTML, CSS, JavaScript, and React for creating modern
                 responsive websites.
               </p>
             </div>
 
-            <div className="bg-pink-50 rounded-2xl p-6">
-              <h3 className="text-2xl font-bold mb-4">Engineering Design</h3>
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-bg-white/5 border border-red-400/20         <h3 className="text-2xl font-bold mb-4">Engineering Design</h3>
               <p className="text-lg leading-relaxed">
                 Understanding innovation, design thinking, and practical problem
                 solving techniques.
               </p>
             </div>
 
-            <div className="bg-green-50 rounded-2xl p-6">
-              <h3 className="text-2xl font-bold mb-4">Data Analysis</h3>
+            <div className="bg-white/5 border border-green-400/20 rounded-2xl p-6">
+     bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8ont-bold mb-4">Data Analysis</h3>
               <p className="text-lg leading-relaxed">
                 Working with datasets using NumPy and Pandas to derive useful
                 insights and visualizations.
               </p>
             </div>
 
-            <div className="bg-yellow-50 rounded-2xl p-6">
+            <div className="bg-white/5 border border-yellow-400/20 rtext-gray-3006">
               <h3 className="text-2xl font-bold mb-4">Communication</h3>
               <p className="text-lg leading-relaxed">
                 Improving presentation and collaboration skills through group
@@ -363,8 +363,8 @@ export default function PortfolioApp() {
               </p>
             </div>
 
-            <div className="bg-red-50 rounded-2xl p-6">
-              <h3 className="text-2xl font-bold mb-4">Innovation</h3>
+            <div className="bg-white/5 border border-red-400/20 rounded-2xl p-6">
+              <h3 className="tetext-gray-300old mb-4">Innovation</h3>
               <p className="text-lg leading-relaxed">
                 Exploring creative solutions for modern engineering challenges
                 using technology and teamwork.
@@ -373,24 +373,24 @@ export default function PortfolioApp() {
           </div>
         </section>
 
-        <section className="bg-white rounded-3xl shadow-lg p-8">
-          <h2 className="text-4xl font-bold mb-8 text-cyan-700">
+        <section className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8">
+          <htext-gray-300text-4xl font-bold mb-8 text-cyan-700">
             Technical Timeline
           </h2>
 
           <div className="space-y-8">
             <div className="border-l-4 border-cyan-500 pl-6">
               <h3 className="text-2xl font-bold">Started Engineering</h3>
-              <p className="text-gray-600 mt-1">2025</p>
+              <p className="text-gray-300 mt-1">2025</p>
               <p className="mt-3 text-lg leading-relaxed">
-                Began B.Tech journey at MIT Academy of Engineering with strong
+                Began B.Tech jtext-gray-300 Academy of Engineering with strong
                 enthusiasm for coding and innovation.
               </p>
             </div>
 
             <div className="border-l-4 border-indigo-500 pl-6">
               <h3 className="text-2xl font-bold">Learned Python Basics</h3>
-              <p className="text-gray-600 mt-1">2025</p>
+              <p className="text-gray-300 mt-1">2025</p>
               <p className="mt-3 text-lg leading-relaxed">
                 Practiced loops, conditions, functions, and problem solving using
                 Python programming.
@@ -399,7 +399,7 @@ export default function PortfolioApp() {
 
             <div className="border-l-4 border-purple-500 pl-6">
               <h3 className="text-2xl font-bold">Explored Data Analysis</h3>
-              <p className="text-gray-600 mt-1">2025</p>
+              <p className="text-gray-300 mt-1">2025</p>
               <p className="mt-3 text-lg leading-relaxed">
                 Started working with NumPy and Pandas for handling structured
                 datasets and performing analysis.
@@ -408,18 +408,16 @@ export default function PortfolioApp() {
 
             <div className="border-l-4 border-pink-500 pl-6">
               <h3 className="text-2xl font-bold">Built React Portfolio</h3>
-              <p className="text-gray-600 mt-1">2026</p>
+              <p className="text-gray-300 mt-1">2026</p>
               <p className="mt-3 text-lg leading-relaxed">
                 Created a responsive portfolio website using React and Tailwind
                 CSS for showcasing skills and projects.
-              </p>
-            </div>
-          </div>
+              </pbg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8iv>
         </section>
 
         <section className="bg-gradient-to-r from-indigo-700 to-blue-700 text-white rounded-3xl shadow-lg p-10 text-center">
           <h2 className="text-5xl font-bold mb-6">
-            Thank You For Visiting My Portfolio
+            Thank You For Visbg-white/5 border border-teal-400/20ortfolio
           </h2>
 
           <p className="text-xl leading-relaxed max-w-4xl mx-auto">
@@ -430,7 +428,7 @@ export default function PortfolioApp() {
           </p>
 
           <div className="mt-10 flex justify-center gap-6 flex-wrap">
-            <button className="bg-white text-indigo-700 px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-all duration-300">
+            <button className="bg-white text-indigo-700 px-8 py-4 rounded-2xl font-bold hover:scalebg-white/5 border border-sky-400/20sition-all duration-300">
               View Projects
             </button>
 
@@ -440,13 +438,13 @@ export default function PortfolioApp() {
           </div>
         </section>
 
-        <section className="bg-white rounded-3xl shadow-lg p-8">
+        <section className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl p-8">
           <h2 className="text-4xl font-bold mb-8 text-teal-700">
-            Extra Sections For Extended Portfolio
+ bg-white/5 backdrop-blur-xl border-t border-white/10 text-white py-8 mt-16Extended Portfolio
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-teal-50 p-6 rounded-2xl">
+            <div className="bg-white/5 border border-teal-400/20 p-6 rounded-2xl">
               <h3 className="text-2xl font-bold mb-4">Future Goals</h3>
               <ul className="space-y-3 text-lg">
                 <li>Become a skilled software engineer</li>
@@ -457,7 +455,7 @@ export default function PortfolioApp() {
               </ul>
             </div>
 
-            <div className="bg-sky-50 p-6 rounded-2xl">
+            <div className="bg-white/5 border border-sky-400/20 p-6 rounded-2xl">
               <h3 className="text-2xl font-bold mb-4">Strengths</h3>
               <ul className="space-y-3 text-lg">
                 <li>Quick learner</li>
@@ -471,7 +469,7 @@ export default function PortfolioApp() {
         </section>
       </main>
 
-      <footer className="bg-black text-white py-8 mt-16">
+      <footer className="bg-white/5 backdrop-blur-xl border-t">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
             <h2 className="text-2xl font-bold">Samiksha Bhosale</h2>
@@ -499,9 +497,9 @@ export default function PortfolioApp() {
   );
 }
 
-// ---------------------------------------------------------------
+// -------------------------------------------
 // Additional Placeholder Components To Extend Portfolio Structure
-// ---------------------------------------------------------------
+// ------------------------------text-gray-300--------------------
 
 export function SkillCard({ title, description }) {
   return (
@@ -512,12 +510,12 @@ export function SkillCard({ title, description }) {
   );
 }
 
-export function ProjectCard({ title, description, tech }) {
+exbg-white/5 border border-red-400/20tion ProjectCard({ title, description, tech }) {
   return (
     <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-all duration-300">
-      <h3 className="text-2xl font-bold mb-4">{title}</h3>
+      <h3 className="text-2xl font-bbg-white/5 border border-white/10{title}</h3>
       <p className="text-lg leading-relaxed mb-4">{description}</p>
-      <div className="flex flex-wrap gap-2">
+     bg-white/5 border border-white/10sName="flex flex-wrap gap-2">
         {tech.map((item, index) => (
           <span
             key={index}
@@ -527,32 +525,26 @@ export function ProjectCard({ title, description, tech }) {
           </span>
         ))}
       </div>
-    </div>
-  );
-}
-
-export function EducationCard({ institute, course, year }) {
+    </div>text-gray-300rt function EducationCard({ institute, course, year }) {
   return (
     <div className="bg-white rounded-2xl shadow-md p-6 border-l-4 border-green-500">
-      <h3 className="text-2xl font-bold">{institute}</h3>
+      <h3 className="text-2xl font-bolbg-white/5 border border-orange-400/20e}</h3>
       <p className="mt-2 text-lg">{course}</p>
-      <p className="mt-1 text-gray-600">{year}</p>
+      <p className="mt-1 text-gray-300">{year}</p>
     </div>
   );
 }
 
 export function ContactCard({ label, value }) {
   return (
-    <div className="bg-white/10 p-5 rounded-2xl">
-      <h3 className="text-xl font-bold">{label}</h3>
+    <div className="bg-white/10 p-5 rounded-2xl"bg-white/5 border border-teal-400/203 className="text-xl font-bold">{label}</h3>
       <p className="mt-2 text-lg">{value}</p>
     </div>
   );
 }
 
-export function HobbyCard({ hobby }) {
-  return (
-    <div className="bg-red-50 rounded-2xl p-5 text-center font-semibold hover:scale-105 transition-all duration-300">
+export function HobbyCard({ hobby }) bg-white/5 border border-sky-400/20n (
+    <div className="bg-white/5 border border-red-400/20 rounded-2xl p-5 text-center font-semibold hover:scale-105 transition-all duration-300">
       {hobby}
     </div>
   );
@@ -560,8 +552,8 @@ export function HobbyCard({ hobby }) {
 
 export function AchievementCard({ text }) {
   return (
-    <div className="bg-pink-50 rounded-2xl p-5 flex items-center gap-4">
-      <div className="w-4 h-4 rounded-full bg-pink-500"></div>
+    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 flex items-center gap-4">
+      <div className="w-4 h-4 rounded-full bg-white/5 border border-white/100"></div>
       <p className="text-lg">{text}</p>
     </div>
   );
@@ -571,7 +563,7 @@ export function TimelineCard({ title, year, description }) {
   return (
     <div className="border-l-4 border-indigo-500 pl-6 py-4">
       <h3 className="text-2xl font-bold">{title}</h3>
-      <p className="text-gray-600 mt-1">{year}</p>
+      <p className="text-gray-300 mt-1">{year}</p>
       <p className="mt-3 text-lg leading-relaxed">{description}</p>
     </div>
   );
@@ -579,16 +571,12 @@ export function TimelineCard({ title, year, description }) {
 
 export function CertificationCard({ title, issuer }) {
   return (
-    <div className="bg-orange-50 rounded-2xl p-6 border border-orange-200">
+    <div className="bg-white/5 border border-orange-400/20 rounded-2xl p-6 border border-orange-200">
       <h3 className="text-2xl font-bold">{title}</h3>
       <p className="mt-2 text-lg">{issuer}</p>
-    </div>
-  );
-}
-
-export function GoalCard({ goal }) {
+    </dbg-white/5 border border-indigo-400/20export function GoalCard({ goal }) {
   return (
-    <div className="bg-teal-50 rounded-2xl p-5 text-lg font-medium">
+    <div className="bg-white/5 border border-teal-400/20 rounded-2xl p-5 text-lg font-medium">
       {goal}
     </div>
   );
@@ -596,7 +584,7 @@ export function GoalCard({ goal }) {
 
 export function StrengthCard({ strength }) {
   return (
-    <div className="bg-sky-50 rounded-2xl p-5 text-lg font-medium">
+    <div className="bg-white/5 border border-sky-400/20 rounded-2xl p-5 text-lg font-medium">
       {strength}
     </div>
   );
@@ -644,7 +632,7 @@ export function QuoteSection() {
         {sampleQuotes.map((quote, index) => (
           <div
             key={index}
-            className="bg-indigo-50 rounded-2xl p-5 text-lg italic"
+            className="bg-white/5 border border-indigo-400/20 rounded-2xl p-5 text-lg italic"
           >
             {quote}
           </div>
@@ -735,3 +723,4 @@ export function PortfolioBanner() {
     </div>
   );
 }
+
